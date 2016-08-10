@@ -12,11 +12,11 @@ __Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework des
 
 ## Quick start
 
-This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html) evaluation code. [CMake](https://cmake.org/) is utilized to build and package the whole project.
+This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project.
 
 ### Setup compiling environment
 
-All code has been tested on Windows 10 (64-bit) with CMake v3.5.1, OpenCV v2.4.12 (the pre-compiled 64-bit binaries for Windows are included in `msvc` folder), Visual Studio 2015 and MATLAB 2015b. Other platforms with compilers supporting C++11 standard are excepted to work but it is not guaranteed. On Windows platforms, please make sure that `cmake.exe` and `MsBuild.exe` ([MSBuild](https://msdn.microsoft.com/en-us//library/0k6kkbsd.aspx) is the build system for Visual Studio) are included in the system `PATH` environment variable before compiling.
+All code has been tested on Windows 10 (64-bit) with CMake v3.5.1, OpenCV v2.4.12 (the pre-compiled 64-bit binaries for Windows are included in `msvc` folder), Visual Studio 2015 and MATLAB 2015b. Other platforms with compilers supporting C++11 standard are excepted to work but not guaranteed. On Windows platforms, please make sure that `cmake.exe` and `MsBuild.exe` ([MSBuild](https://msdn.microsoft.com/en-us//library/0k6kkbsd.aspx) is the build system for Visual Studio) are included in the system `PATH` environment variable before compiling.
 
 ### Download and compile the code
 
@@ -71,7 +71,7 @@ For example, evaluating the performance of our sketch-based 3D model retrieval a
 4. Run `retrieve_model.m` to retrieve 3D models for all query sketches, and results are saved into `matlab\SHREC2013\RetrievalLists`
 5. Run `evaluate_rank_lists.m` to evaluate the retrieval performance
 
-Note that we use a MEX file to speed up the evaluation process (100x faster than the original evaluation code provided by SHREC'13).
+Note that we use a MEX file to speed up the evaluation process, which is 100x faster than the original evaluation code provided by SHREC'13.
 
 ## Related projects
 
