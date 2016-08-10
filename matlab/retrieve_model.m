@@ -8,7 +8,7 @@ DATASET_CONFIG_SKETCH_FILE = fullfile(DATASET_DIR, 'SHREC13_SBR_Sketch_Test.cla'
 DATASET_CONFIG_MODEL_FILE = fullfile(DATASET_DIR, 'SHREC13_SBR_Model.cla');
 
 RANK_DIR = fullfile(DATASET_DIR, 'RetrievalLists');
-INDEXER_DATA_FILE = fullfile(DATASET_DIR, 'Cache', 'indexerdata.dat');
+INDEXER_DATA_FILE = fullfile(DATASET_DIR, 'indexerdata.dat');
 
 addpath('util');
 addpath(DATASET_DIR);
