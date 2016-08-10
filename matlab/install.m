@@ -1,4 +1,6 @@
-clearvars; clc;
+% Install compiled MEX files and rumtime support libraries.
+
+clear all; clc;
 
 BUILD_DIR       = '../build';
 BUILD_BIN_DIR   = fullfile(BUILD_DIR, 'bin');

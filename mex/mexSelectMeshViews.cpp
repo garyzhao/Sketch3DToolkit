@@ -22,7 +22,7 @@ void clear_context(int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[])
 	clearGLContext(mainWindowPtr);
 }
 
-void select_mesh(int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[])
+void select_view(int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[])
 {
 	if (nrhs < 4)
 	{
@@ -74,6 +74,6 @@ void select_mesh(int nlhs, mxArray* plhs[], int nrhs, const mxArray* prhs[])
 DECLARE_MEX_COMMAND_BEGIN
 DECLARE_MEX_COMMAND(init_context)
 DECLARE_MEX_COMMAND(clear_context)
-DECLARE_MEX_COMMAND(select_mesh)
+DECLARE_MEX_COMMAND(select_view)
 DECLARE_MEX_COMMAND_END
 DECLARE_MEX_FUNCTION

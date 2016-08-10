@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % read a sketch/model classification file (models' name and class, class information).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function [modelclass, N]=read_classification_file(filename)
+function [modelclass, N] = read_classification_file(filename)
 
 fp=fopen(filename,'r');
 fscanf(fp,'%s',2);

@@ -6,9 +6,9 @@ matlab/util/*.mexw64
 
 matlab/SHREC2013/*.dat
 matlab/SHREC2013/Models/*.off
-matlab/SHREC2013/Views/*.png
-matlab/SHREC2013/Views/*.xf
 matlab/SHREC2013/Sketches/**/*.png
+matlab/SHREC2013/RetrievalLists
+matlab/SHREC2013/Views
 
 # Compiled Object Files
 *.slo
