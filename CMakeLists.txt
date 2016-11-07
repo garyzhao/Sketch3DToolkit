@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 project(Sketch3DToolkit)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-set(MSVC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/msvc)
 set(LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 set(MODULE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/module)
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
@@ -13,13 +12,12 @@ set(GLUI_INCLUDE_DIR ${LIB_DIR}/glui-2.3/src/include)
 set(TRIMESH2_INCLUDE_DIR ${LIB_DIR}/trimesh2-2.12/include)
 set(LIB_INCLUDE_DIR ${GLUT_INCLUDE_DIR} ${GLEW_INCLUDE_DIR} ${GLUI_INCLUDE_DIR} ${TRIMESH2_INCLUDE_DIR})
 
-include_directories(${TRIMESH2_INCLUDE_DIR} ${GLEW_INCLUDE_DIR} ${GLUI_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
+include_directories(${LIB_INCLUDE_DIR} ${SRC_DIR})
 include_directories(
 	${MODULE_DIR}/imgproc
 	${MODULE_DIR}/meshutil
 	${MODULE_DIR}/hashing
 	${MODULE_DIR}/retrieval
-	${SRC_DIR}
 )
 
 if(MSVC)
@@ -27,13 +25,12 @@ if(MSVC)
 	set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 	set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "CMakeTargets")
 	
+	set(MSVC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/msvc)
 	set(MSVC_USER_CONFIG ${MSVC_DIR}/project.vcxproj.user.in)
-endif(MSVC)
 
-if(WIN32)
 	set(OpenCV_DIR ${MSVC_DIR}/opencv-2.4.12)
 	set(OpenCV_STATIC OFF)
-endif(WIN32)
+endif(MSVC)
 
 find_package(OpenCV REQUIRED)
 find_package(Matlab COMPONENTS MX_LIBRARY)

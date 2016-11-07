@@ -1,20 +1,12 @@
-matlab_add_mex(
-	NAME mexHashIndexer
-	SRC mexHashIndexer.cpp mex_util.h
-	LINK_TO imgproc hashing retrieval ${OpenCV_LIBS}
-)
+macro(add_mex name)	
+	matlab_add_mex(
+		NAME ${name}
+		SRC ${ARGN} mex_util.h
+		LINK_TO ${OpenCV_LIBS} meshutil imgproc hashing retrieval
+	)
+	set_target_properties(${name} PROPERTIES FOLDER "mex")
+endmacro()
 
-matlab_add_mex(
-	NAME mexEvalRankLists
-	SRC mexEvalRankLists.cpp mex_util.h
-)
-
-matlab_add_mex(
-	NAME mexSelectMeshViews
-	SRC mexSelectMeshViews.cpp mex_util.h
-	LINK_TO imgproc hashing retrieval meshutil ${OpenCV_LIBS}
-)
-
-set_target_properties(mexHashIndexer PROPERTIES FOLDER "mex")
-set_target_properties(mexEvalRankLists PROPERTIES FOLDER "mex")
-set_target_properties(mexSelectMeshViews PROPERTIES FOLDER "mex")
+add_mex(mexHashIndexer mexHashIndexer.cpp)
+add_mex(mexEvalRankLists mexEvalRankLists.cpp)
+add_mex(mexSelectMeshViews mexSelectMeshViews.cpp)
