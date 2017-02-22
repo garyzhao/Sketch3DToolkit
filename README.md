@@ -12,7 +12,27 @@ __Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework des
 
 ## Quick start
 
-This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project.
+This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project. If you use the Sketch3D Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
+
+```
+@article{ZhaoTVC15views,
+  author    = {Long Zhao and Shuang Liang and Jinyuan Jia and Yichen Wei},
+  title     = {Learning best views of 3D shapes from sketch contour},
+  journal   = {The Visual Computer},
+  year      = {2015},
+  volume    = {31},
+  number    = {6-8},
+  pages     = {765--774}
+}
+
+@inproceedings{LiangPCM14hashing,
+  author    = {Shuang Liang and Long Zhao and Yichen Wei and Jinyuan Jia},
+  title     = {Sketch-Based Retrieval Using Content-Aware Hashing},
+  booktitle = {Proceedings of the 15th Annual Pacific-Rim Conference on Multimedia (PCM)},
+  year      = {2014},
+  pages     = {133--142}
+}
+```
 
 ### Setup compiling environment
 
