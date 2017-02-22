@@ -1,18 +1,6 @@
 # Sketch3D Toolkit
 
-__Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework designed to enable people to make use of hand-drawn sketches as queries to retrieve large scale 3D model datasets on lightweight devices without powerful GPGPUs, such as laptops, tablets and mobiles. This project is released under the [MIT license](https://github.com/garyzhao/Sketch3DToolkit/blob/master/LICENSE), and all code is public domain software.
-
-## Table of contents
-
-* [Quick start](#quick-start)
-* [Project dependency](#project-dependency)
-* [What's included](#whats-included)
-* [Working pipeline](#working-pipeline)
-* [Related projects](#related-projects)
-
-## Quick start
-
-This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project. If you use the Sketch3D Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
+__Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework designed to enable people to make use of hand-drawn sketches as queries to retrieve large scale 3D model datasets on lightweight devices without powerful GPGPUs, such as laptops, tablets and mobiles. This project is released under the [MIT license](https://github.com/garyzhao/Sketch3DToolkit/blob/master/LICENSE), and all code is public domain software. If you use the Sketch3D Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
 
 ```
 @article{ZhaoTVC15views,
@@ -33,6 +21,18 @@ This toolkit contains the C++ implementation of the core sketch-based shape retr
   pages     = {133--142}
 }
 ```
+
+## Table of contents
+
+* [Quick start](#quick-start)
+* [Project dependency](#project-dependency)
+* [What's included](#whats-included)
+* [Working pipeline](#working-pipeline)
+* [Related projects](#related-projects)
+
+## Quick start
+
+This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project.
 
 ### Setup compiling environment
 
