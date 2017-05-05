@@ -1,4 +1,4 @@
-# Sketch3D Toolkit
+SketchesSketches# Sketch3D Toolkit
 
 __Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework designed to enable people to make use of hand-drawn sketches as queries to retrieve large scale 3D model datasets on lightweight devices without powerful GPGPUs, such as laptops, tablets and mobiles. This project is released under the [MIT license](https://github.com/garyzhao/Sketch3DToolkit/blob/master/LICENSE), and all code is public domain software. If you use the Sketch3D Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
 
@@ -85,11 +85,23 @@ Within the download you'll find the following directories and files, logically g
 
 For example, evaluating the performance of our sketch-based 3D model retrieval algorithm on the [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) dataset can be done as follows:
 
-1. Set `DATASET_DIR` variable to `'SHREC2013'` in `setupvars.m`
-1. Download the [complete 3D target model dataset](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/data.html) of SHREC'13 and put them into `matlab\SHREC2013\Models`
-2. Download the [training and testing sketches dataset](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/data.html) of SHREC'13 and put them into `matlab\SHREC2013\Sketches`
-3. Run `sbsr_select_model_views.m` to generate candidate views for all 3D models into `matlab\SHREC2013\Views`
-4. Run `sbsr_retrieve_model.m` to retrieve 3D models for all query sketches, and results are saved into `matlab\SHREC2013\RetrievalLists`
+1. Set `DATASET_DIR` variable to `'SHREC13'` in `setupvars.m`
+1. Download the [complete 3D target model dataset](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/data.html) of SHREC'13 and put them into `matlab\SHREC13\Models`
+2. Download the [training and testing sketches dataset](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/data.html) of SHREC'13 and put them into `matlab\SHREC13\Sketches`
+
+Organize these files so that directory structure looks like this:
+```
+SHREC13
+|-- Models
+    |-- m0.off
+    |-- m1.off
+    |-- ...
+|-- Sketches
+    |-- m0.off
+```
+
+3. Run `sbsr_select_model_views.m` to generate candidate views for all 3D models into `matlab\SHREC13\Views`
+4. Run `sbsr_retrieve_model.m` to retrieve 3D models for all query sketches, and results are saved into `matlab\SHREC13\RetrievalLists`
 5. Run `eval_rank_lists.m` to evaluate the retrieval performance
 6. Run `eval_draw_curves.m` to show Precision-Recall Curves (PR Curves) for evaluated methods
 

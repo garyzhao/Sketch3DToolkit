@@ -4,11 +4,17 @@ build
 matlab/util/*.dll
 matlab/util/*.mexw64
 
-matlab/SHREC2013/*.dat
-matlab/SHREC2013/Models/*.off
-matlab/SHREC2013/Sketches/**/*.png
-matlab/SHREC2013/RetrievalLists
-matlab/SHREC2013/Views
+matlab/SHREC13/*.dat
+matlab/SHREC13/Models/*.off
+matlab/SHREC13/Sketches/**/*.png
+matlab/SHREC13/RetrievalLists
+matlab/SHREC13/Views
+
+matlab/SHREC14/*.dat
+matlab/SHREC14/Models/*.off
+matlab/SHREC14/Sketches/**/*.png
+matlab/SHREC14/RetrievalLists
+matlab/SHREC14/Views
 
 # Compiled Object Files
 *.slo
