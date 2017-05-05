@@ -97,7 +97,15 @@ SHREC13
     |-- m1.off
     |-- ...
 |-- Sketches
-    |-- m0.off
+    |-- airplane
+        |-- test
+            |-- 2.png
+            |-- ...
+        |-- train
+            |-- 1.png
+            |-- ...
+    |-- ant
+    |-- ...
 ```
 
 3. Run `sbsr_select_model_views.m` to generate candidate views for all 3D models into `matlab\SHREC13\Views`
