@@ -1,5 +1,7 @@
 # Sketch3D Toolkit
 
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/garyzhao/Sketch3DToolkit/blob/master/LICENSE)
+
 __Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework designed to enable people to make use of hand-drawn sketches as queries to retrieve large scale 3D model datasets on lightweight devices without powerful GPGPUs, such as laptops, tablets and mobiles. This project is released under the [MIT license](https://github.com/garyzhao/Sketch3DToolkit/blob/master/LICENSE), and all code is public domain software. If you use the Sketch3D Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
 
 ```
