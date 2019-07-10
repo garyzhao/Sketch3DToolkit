@@ -36,6 +36,8 @@ __Sketch3D Toolkit__ is a lightweight sketch-based shape retrieval framework des
 
 This toolkit contains the C++ implementation of the core sketch-based shape retrieval algorithm, MATLAB retrieval interfaces and a retrieval performance evaluation tool suite built upon the evaluation code provided by [SHREC'13](http://www.itl.nist.gov/iad/vug/sharp/contest/2013/SBR/) and [SHREC'14](http://www.itl.nist.gov/iad/vug/sharp/contest/2014/SBR/index.html). [CMake](https://cmake.org/) is utilized to build and package the whole project.
 
+**Note that the websites of SHREC'13 and SHREC'14 are no longer available, please download the data from [Google Drive](https://drive.google.com/open?id=1HdqE51EP_X47Ri9AR8Xzj6oNrPD5DW7k).**
+
 ### Setup compiling environment
 
 All code has been tested on Windows 10 (64-bit) with CMake v3.5.1, OpenCV v2.4.12 (the pre-compiled 64-bit binaries for Windows are included in `msvc` folder), Visual Studio 2015 and MATLAB 2015b. Other platforms with compilers supporting C++11 standard are excepted to work but not guaranteed. On Windows platforms, please make sure that `cmake.exe` and `MsBuild.exe` ([MSBuild](https://msdn.microsoft.com/en-us//library/0k6kkbsd.aspx) is the build system for Visual Studio) are included in the system `PATH` environment variable before compiling.
